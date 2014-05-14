@@ -1,0 +1,553 @@
+@import "bootstrap/_variables.scss";
+@import "bootstrap/_mixins.scss";
+
+@font-face {
+	font-family: 'proxima_nova_rgregular';
+	src: url('http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17338/proximanova-regular-webfont.eot');
+	src: url('http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17338/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17347/proximanova-regular-webfont.woff') format('woff'),
+	url('http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17344/proximanova-regular-webfont.ttf') format('truetype'),
+	url('http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17341/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+@font-face {
+	font-family: 'proximanova-semibold';
+	src: url('http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17350/proximanova-semibold-webfont.eot');
+	src: url('http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17350/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17359/proximanova-semibold-webfont.woff') format('woff'),
+	url('http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17356/proximanova-semibold-webfont.ttf') format('truetype'),
+	url('http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17353/proximanova-semibold-webfont.svg#proxima_nova_ltbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+@font-face {
+	font-family: 'swiss_721bold';
+	src: url('http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17362/swz721b-webfont.eot');
+	src: url('http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17362/swz721b-webfont.eot?#iefix') format('embedded-opentype'),
+	url('http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17371/swz721b-webfont.woff') format('woff'),
+	url('http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17368/swz721b-webfont.ttf') format('truetype'),
+	url('http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17365/swz721b-webfont.svg#swiss_721bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+	&.no-js {
+		body {
+			.container-fluid {
+				&.header {
+					.container.nav {
+						.row {
+							#desktop-nav {
+								li {
+									ul {
+										display: none;
+									}
+									&:hover {
+										>ul {
+											display: block;
+										}
+									}
+								}
+							}
+						}
+					}
+					.cycle-slideshow {
+						.cycle-prev, .cycle-next {
+							&.hidden-sm {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	body {
+		margin: 0;
+		padding: 0;
+		.container-fluid {
+			&.header {
+				background: url(http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17248/header-bg.jpg) 0 bottom repeat-x #a2a19c;
+				border-bottom: 1px solid #fff;
+				.container.nav {
+					background: url(http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17333/header-top-bgwhite.png) 0 0 no-repeat;
+					left: 50%;
+					height:137px;
+					margin-left: -522px;
+					padding: 0;
+					position: absolute;
+					z-index: 2;
+					.row {
+						margin: 0;
+						.logo {
+							height:123px;
+							margin-left:10px;
+							width:309px;
+							a {
+								display: block;
+								height: 123px;
+								text-indent: -999999px;
+								width: 309px;
+							}
+						}
+						#header-link{
+							color: #000204;
+							font: normal 12px/20px 'proximanova-semibold';
+							height: 30px;
+							padding-top: 4px;
+							position: absolute;
+							right: 20px;
+							top: 0;
+							width: 700px;
+							z-index: 77;
+							.call {
+								color: #9e9e9e;
+								font: normal 19px/24px 'proxima_nova_rgregular';
+								float: left;
+								text-transform: uppercase;
+								span {
+									color: #51504f;
+									font: normal 18px/24px 'proximanova-semibold';
+									a {
+										color: #51504f;
+										font: normal 18px/24px 'proximanova-semibold';
+										text-decoration: none;
+									}
+								}
+							}
+							.search {
+								background: url(http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/59614/searchyellow.jpg) center 0 no-repeat;
+								float: right;
+								height: 21px;
+								width: 180px;
+								.search-button {
+									background: none;
+									border: none;
+									cursor: pointer;
+									height: 22px;
+									float: right;
+									width:21px;
+								}
+								.search-text {
+									background: none;
+									border: none;
+									color: #878787;
+									float: left;
+									font: italic 11px/24px Georgia, "Times New Roman", Times, serif;
+									height: 21px;
+									padding: 0 5px;
+									width: 148px;
+								}
+							}
+						}
+						#desktop-nav {
+							font:normal 12px/18px 'proximanova-semibold';
+							left:319px;
+							list-style: none;
+							margin: 0;
+							padding: 0;
+							position: absolute;
+							top:37px; 
+							width:713px; 
+							z-index:100;
+							li {
+								float: left;
+								position: relative;
+								z-index: 100;
+								a {
+									color: #6a747c;
+									display: block;
+									padding: 12px 8px;
+									text-align: left;
+									text-transform: uppercase;
+									@include transition(.3s all ease-in-out);
+									&:hover {
+										color: #38352f;
+										text-decoration: none;
+									}
+								}
+								ul {
+									background: #fff;
+									left: 0;
+									list-style: none;
+									margin: 0;
+									padding: 0;
+									position: absolute;
+									top: 100%;
+									width: 240px;
+									li {
+										background: none;
+										border-top: 1px solid #eee;
+										margin: 0;
+										padding: 0;
+										&:first-child {
+											border: none;
+										}
+										a {
+											background: none;
+											color: #6a747c;
+											display: block;
+											font: normal 11px/14px 'swiss_721bold';
+											padding: 12px 10px;
+											text-decoration: none;
+											text-transform: uppercase;
+											width: 240px;
+											&:hover {
+												background: #ffb427;
+												color: #fff;
+											}
+										}
+										ul {
+											left: 100%;
+											position: absolute;
+											top: 0;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				.cycle-slideshow {
+					margin: 0 auto;
+					max-height: 521px;
+					max-width: 1395px;
+					overflow: hidden;
+					position: relative;
+					z-index: 1;
+					.cycle-next, .cycle-prev{
+						&.hidden-sm {
+							cursor: pointer;
+							display: block;
+							height: 59px;
+							position: absolute;
+							text-indent: -9999px;
+							top: 45%;
+							width: 40px;
+							z-index: 10000;
+						}
+					}
+					.cycle-next {
+						&.hidden-sm {
+							background:url(http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17288/slider_next.png) 0 0 no-repeat;
+							right:100px;
+						} 
+					}
+					.cycle-prev {
+						&.hidden-sm {
+							background:url(http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17293/slider_pre.png) 0 0 no-repeat;
+							left:80px;
+						}
+					}
+					.slide {
+						position: relative;
+						.caption {
+							left: 160px;
+							position: absolute;
+							text-align: center;
+							top: 192px;
+							width: 504px;
+							h1 {
+								color: #005288;
+								font: normal 30px/34px 'swiss_721bold';
+								letter-spacing: 3px;
+								margin: 0;
+								padding-bottom: 10px;
+								text-transform: uppercase;
+								text-shadow: 1px 1px 1px #bfc4c5;
+							}
+							h3 {
+								color: #677f95;
+								font: normal 15px/24px 'proximanova-semibold';
+								letter-spacing: 2px;
+								margin: 0;
+								padding-bottom: 10px;
+								text-transform: uppercase;
+								text-shadow: 1px 1px 1px #bfc4c5;
+							}
+						}
+						img {
+							width: 100%;
+						}
+					}
+				}
+			}
+			&.home-body {
+				background: url(http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17268/main-bg.png) 0 0 repeat-x;
+				position: relative;
+				#for-tabs {
+					background: #51504f;
+					height: 151px;
+					left: 50%;
+					margin-left: -512px;
+					padding: 0;
+					position: absolute;
+					top: -80px;
+					width: 1024px;
+					z-index: 10000;
+					.row {
+						margin: 0;
+						.col-sm-4 {
+						padding: 0;
+						a {
+							color: #fff;
+							display: block;
+							height: 151px;
+							text-decoration: none;
+							&:hover {
+								text-decoration: none;
+							}
+							img {
+								float: left;
+								height: 151px;
+								width: 100px;
+							}
+							h5 {
+								background: url(http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17318/tab-bg.jpg) no-repeat;
+								font: normal 24px/24px 'proximanova-semibold';
+								float: left;
+								height: 151px;
+								margin: 0;
+								padding: 25px 0;
+								text-align: center;
+								text-transform: uppercase;
+								@include transition(background .3s ease-in-out);
+								width: 241px;
+								span {
+									font: normal 14px/24px 'proximanova-semibold';
+								}
+							}
+						}
+						&:hover {
+							h5 {
+								background: url(http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/59987/tab-hover-gold.jpg);
+							}
+						}
+					}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $screen-md-min) {
+	html {
+		body {
+			.container-fluid {
+				&.header {
+					padding: 0;
+					.navbar {
+						background: #fff;
+						border-radius: 0;
+						margin-bottom: 0;
+						position: relative;
+						z-index: 2;
+						.navbar-header {
+							margin: 0;
+							position: relative;
+							width: 100%;
+							.navbar-toggle {
+								display: block;
+							}
+							.navbar-brand {
+								background: #fff;
+								@include box-shadow(0 2px 10px rgba(0,0,0,.5));
+								float: none;
+								height: auto;
+								left: 0;
+								padding: 0 15px;
+								position: absolute;
+								top: 0;
+								z-index: 1;
+								img {
+									height: 95px;
+								}
+							}
+							.collapse, .collapsing {
+								width: 100%;
+								ul.navbar-nav {
+									margin: 0 -15px;
+									li {
+										border-bottom: 1px solid #eee;
+										font-family: 'proximanova-semibold';
+										text-align: right;
+										text-transform: uppercase;
+									}
+								}
+							}
+						}
+					}
+					.cycle-slideshow {
+						.slide {
+							.caption {
+								top: 100px;
+								width: 300px;
+								h1 {
+									font-size: 1.3em;
+									line-height: 1.2em;
+								}
+								h3 {
+									font-size: 1em;
+									line-height: 1.2em;
+								}
+							}
+						}
+						.cycle-prev, .cycle-next {
+							&.glyphicon {
+								color: #fff;
+								font-size: 2.5em;
+								position: absolute;
+								text-indent: 0;
+								text-shadow: 0 0 3px rgba(0,0,0,.5);
+								top: 50%;
+								z-index: 1000;
+								&:hover {
+									cursor: pointer;
+								}
+							}
+						}
+						.cycle-prev {
+							&.glyphicon {
+								left: 8%;
+							}
+						}
+						.cycle-next {
+							&.glyphicon {
+								right: 8%;
+							}
+						}
+					}
+				}
+				&.home-body {
+					padding: 0;
+					#for-tabs {
+						margin-left: 0;
+						position: static;
+						width: 100%;
+						.row {
+							.col-sm-4 {
+								a {
+									h5 {
+										background-size: cover;
+										width: 100%;
+										&:hover {
+											background-size: cover;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $screen-sm-min) {
+	html {
+		body {
+			.container-fluid {
+				&.header {
+					.navbar {
+						.container-fluid {
+							padding: 0;
+							.navbar-header {
+								.navbar-brand {
+									img {
+										height: 80px;
+									}
+								}
+							}
+						}
+					}
+					.cycle-slideshow {
+						.slide {
+							.caption {
+								left: 18%;
+								padding-top: 10px;
+								top: 20%;
+								width: 250px;
+								h1 {
+									font-size: 1em;
+									line-height: 1.2em;
+									padding-bottom: 5px;
+								}
+								h3 {
+									font-size: .8em;
+									line-height: 1.2em;
+								}
+							}
+						}
+					}
+				}
+				&.home-body {
+					#for-tabs {
+						.row {
+							.col-sm-4 {
+								 a {
+								 	height: auto;
+								 	h5 {
+								 		height: auto;
+								 	}
+								 }
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $screen-xs-min) {
+	html {
+		body {
+			.container-fluid {
+				&.header {
+					.navbar {
+						.container-fluid {
+							padding: 0;
+							.navbar-header {
+								.navbar-brand {
+									img {
+										height: 65px;
+									}
+								}
+							}
+						}
+					}
+					.cycle-slideshow {
+						.slide {
+							.caption {
+								padding-top: 10px;
+								top: 25%;
+								width: 150px;
+								h1 {
+									font-size: .7em;
+									line-height: 1.2em;
+									padding-bottom: 5px;
+								}
+								h3 {
+									display: none;
+									font-size: .8em;
+									line-height: 1.2em;
+								}
+							}
+						}
+						.cycle-prev, .cycle-next {
+							&.glyphicon {
+								font-size: 1.5em;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
