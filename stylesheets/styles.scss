@@ -90,8 +90,8 @@ html {
 					.row {
 						margin: 0;
 						.logo {
-							height:123px;
 							margin-left:10px;
+							min-height:123px;
 							width:309px;
 							a {
 								display: block;
@@ -683,14 +683,20 @@ html {
 								background: #fff;
 								@include box-shadow(0 2px 10px rgba(0,0,0,.5));
 								float: none;
-								height: auto;
+								height: 85px;
 								left: 0;
 								padding: 0 15px;
 								position: absolute;
+								text-align: center;
 								top: 0;
 								z-index: 1;
 								img {
-									height: 95px;
+									height: 55px;
+								}
+								.tagline {
+									display: block;
+									font-size: .8em;
+									text-transform: uppercase;
 								}
 							}
 							.collapse, .collapsing {
@@ -815,6 +821,9 @@ html {
 							.row {
 								.col-md-8 {
 									width: 100%;
+									.text-area {
+										padding: 0;
+									}
 								}
 								.col-md-4 {
 									width: 100%;
@@ -972,8 +981,13 @@ html {
 							padding: 0;
 							.navbar-header {
 								.navbar-brand {
+									height: auto;
+									padding: 5px;
 									img {
-										height: 80px;
+										height: 40px;
+									}
+									.tagline {
+										font-size: .65em;
 									}
 								}
 							}
@@ -1040,6 +1054,20 @@ html {
 						}
 					}
 				}
+				&.mobile-call {
+					.col-xs-6 {
+						&.call {
+							h5 {
+								font-size: 1em;
+							}
+						}
+						&.location {
+							h5 {
+								font-size: 1em;
+							}
+						}
+					}
+				}
 			}
 		}
 	}
@@ -1053,13 +1081,6 @@ html {
 					.navbar {
 						.container-fluid {
 							padding: 0;
-							.navbar-header {
-								.navbar-brand {
-									img {
-										height: 65px;
-									}
-								}
-							}
 						}
 					}
 					.cycle-slideshow {
