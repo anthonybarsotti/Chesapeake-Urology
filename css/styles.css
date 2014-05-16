@@ -26,6 +26,11 @@ html.no-js body .container-fluid.header .container.nav .row #desktop-nav li:hove
 html.no-js body .container-fluid.header .cycle-slideshow .cycle-prev.hidden-sm, html.no-js body .container-fluid.header .cycle-slideshow .cycle-next.hidden-sm {
   display: none; }
 html body {
+  color: #51504f;
+  font-family: proxima_nova_rgregular, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
   margin: 0;
   padding: 0; }
   html body .container-fluid.header {
@@ -39,7 +44,7 @@ html body {
       margin-left: -522px;
       padding: 0;
       position: absolute;
-      z-index: 10; }
+      z-index: 100000; }
       html body .container-fluid.header .container.nav .row {
         margin: 0; }
         html body .container-fluid.header .container.nav .row .logo {
@@ -224,6 +229,126 @@ html body {
             text-shadow: 1px 1px 1px #bfc4c5; }
         html body .container-fluid.header .cycle-slideshow .slide img {
           width: 100%; }
+  html body .container-fluid.inpage-banner {
+    padding: 0; }
+    html body .container-fluid.inpage-banner > .row {
+      position: relative; }
+      html body .container-fluid.inpage-banner > .row:after {
+        background: url(http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/20857/misc-left.png) no-repeat;
+        height: 296px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 49%; }
+      html body .container-fluid.inpage-banner > .row:before {
+        background: url(http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/20862/misc-right.png) right 0 no-repeat;
+        height: 296px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 49%; }
+      html body .container-fluid.inpage-banner > .row .container .row {
+        height: 296px;
+        position: relative;
+        text-align: center;
+        top: 34px;
+        z-index: 1000; }
+        html body .container-fluid.inpage-banner > .row .container .row img {
+          -webkit-box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.3); }
+  html body .container-fluid.main-content {
+    background: url(http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17268/main-bg.png) 0 0 repeat-x; }
+    html body .container-fluid.main-content .row .container {
+      margin: 0 auto;
+      padding: 80px 15px;
+      width: 940px; }
+      html body .container-fluid.main-content .row .container .row .col-md-8 {
+        padding: 0;
+        width: 657px; }
+        html body .container-fluid.main-content .row .container .row .col-md-8 h1.page-heading {
+          border-bottom: 1px solid #ffb427;
+          color: #6a747c;
+          font-family: 'proxima_nova_rgregular', sans-serif;
+          font-size: 30px;
+          font-weight: normal;
+          line-height: 36px;
+          margin-top: 0;
+          padding-bottom: 20px;
+          text-transform: uppercase; }
+        html body .container-fluid.main-content .row .container .row .col-md-8 .text-area {
+          padding: 20px 60px 0 0; }
+          html body .container-fluid.main-content .row .container .row .col-md-8 .text-area h2 {
+            color: #005288;
+            font-family: 'proxima_nova_rgregular', sans-serif;
+            font-size: 18px;
+            font-weight: normal;
+            line-height: 24px;
+            margin-top: 0;
+            padding-bottom: 15px;
+            text-transform: uppercase; }
+          html body .container-fluid.main-content .row .container .row .col-md-8 .text-area p a {
+            color: #005288;
+            -webkit-transition: 0.3s color ease-in-out;
+            transition: 0.3s color ease-in-out; }
+            html body .container-fluid.main-content .row .container .row .col-md-8 .text-area p a:hover {
+              color: #51504f;
+              text-decoration: none; }
+      html body .container-fluid.main-content .row .container .row .col-md-4 {
+        padding: 0;
+        width: 283px; }
+        html body .container-fluid.main-content .row .container .row .col-md-4 .side-menu-bg {
+          background: url(http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/59609/cugradient.jpg) center top no-repeat #7c7c7c;
+          margin-bottom: 20px; }
+          html body .container-fluid.main-content .row .container .row .col-md-4 .side-menu-bg ul.side-menu {
+            font-family: 'proxima_nova_rgregular', sans-serif;
+            font-size: 11px;
+            font-weight: normal;
+            line-height: 18px;
+            margin: 0;
+            padding: 0 15px;
+            text-transform: uppercase; }
+            html body .container-fluid.main-content .row .container .row .col-md-4 .side-menu-bg ul.side-menu li {
+              border-top: 1px solid #ffb427;
+              list-style: none;
+              margin: 0;
+              padding: 0; }
+              html body .container-fluid.main-content .row .container .row .col-md-4 .side-menu-bg ul.side-menu li:first-child {
+                border-top: none; }
+              html body .container-fluid.main-content .row .container .row .col-md-4 .side-menu-bg ul.side-menu li a {
+                color: #000;
+                display: block;
+                padding: 10px 0;
+                -webkit-transition: 0.3s color ease-in-out;
+                transition: 0.3s color ease-in-out; }
+                html body .container-fluid.main-content .row .container .row .col-md-4 .side-menu-bg ul.side-menu li a:hover {
+                  color: #fff;
+                  text-decoration: none; }
+        html body .container-fluid.main-content .row .container .row .col-md-4 .information {
+          background: url(http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17253/information.png) 0 0 no-repeat;
+          box-sizing: initial;
+          color: #c9c9c9;
+          font-family: 'proximanova-semibold', sans-serif;
+          font-size: 13px;
+          height: 153px;
+          line-height: 24px;
+          margin-bottom: 20px;
+          padding: 20px 0;
+          width: 100%; }
+          html body .container-fluid.main-content .row .container .row .col-md-4 .information h6 {
+            border-bottom: 1px solid #bbb7b4;
+            color: #fff;
+            font-family: 'proximanova-semibold', sans-serif;
+            font-size: 14px;
+            letter-spacing: 2px;
+            line-height: 24px;
+            margin: 0 15px;
+            text-align: center; }
+            html body .container-fluid.main-content .row .container .row .col-md-4 .information h6 span {
+              font-size: 23px;
+              letter-spacing: 4px; }
+          html body .container-fluid.main-content .row .container .row .col-md-4 .information p.call {
+            margin: 0;
+            padding: 5px 0 0 15px; }
   html body .container-fluid.home-body {
     background: url(http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17268/main-bg.png) 0 0 repeat-x;
     padding: 0;
@@ -392,7 +517,7 @@ html body {
       border-radius: 0;
       margin-bottom: 0;
       position: relative;
-      z-index: 2; }
+      z-index: 1000000; }
       html body .container-fluid.header .navbar .navbar-header {
         margin: 0;
         position: relative;
@@ -450,6 +575,18 @@ html body {
       left: 8%; }
     html body .container-fluid.header .cycle-slideshow .cycle-next.glyphicon {
       right: 8%; }
+  html body .container-fluid.inpage-banner > .row:before {
+    height: 150px; }
+  html body .container-fluid.inpage-banner > .row:after {
+    height: 150px; }
+  html body .container-fluid.inpage-banner > .row .container .row {
+    height: 150px;
+    top: -52px; }
+    html body .container-fluid.inpage-banner > .row .container .row img {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      height: 202px;
+      width: auto; }
   html body .container-fluid.mobile-call .col-xs-6.call h5 {
     background: url(../img/Phone.png) no-repeat left center;
     background-size: 20px 18px;
@@ -468,6 +605,19 @@ html body {
     line-height: 31px;
     text-transform: uppercase;
     margin: 0; }
+  html body .container-fluid.main-content .row .container {
+    padding: 30px 0;
+    width: 100%; }
+    html body .container-fluid.main-content .row .container .row .col-md-8 {
+      width: 100%; }
+    html body .container-fluid.main-content .row .container .row .col-md-4 {
+      width: 100%; }
+      html body .container-fluid.main-content .row .container .row .col-md-4 .side-menu-bg {
+        background-size: 100% 100%; }
+        html body .container-fluid.main-content .row .container .row .col-md-4 .side-menu-bg ul.side-menu li {
+          font-size: 16px;
+          line-height: normal;
+          text-align: center; }
   html body .container-fluid.home-body {
     padding: 0; }
     html body .container-fluid.home-body #for-tabs {
@@ -569,6 +719,18 @@ html body {
     html body .container-fluid.header .cycle-slideshow .slide .caption h3 {
       font-size: 0.8em;
       line-height: 1.2em; }
+  html body .container-fluid.inpage-banner > .row:before {
+    background: none;
+    height: auto; }
+  html body .container-fluid.inpage-banner > .row:after {
+    background: none;
+    height: auto; }
+  html body .container-fluid.inpage-banner > .row .container .row {
+    height: auto;
+    top: 0; }
+    html body .container-fluid.inpage-banner > .row .container .row img {
+      height: auto;
+      width: 100%; }
   html body .container-fluid.home-body #for-tabs {
     height: auto; }
     html body .container-fluid.home-body #for-tabs .row .col-sm-4 {

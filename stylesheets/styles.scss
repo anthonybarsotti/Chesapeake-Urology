@@ -67,6 +67,11 @@ html {
 		}
 	}
 	body {
+		color: #51504f;
+		font-family: proxima_nova_rgregular, sans-serif;
+		font-size: 14px;
+		font-weight: normal;
+		line-height: 18px;
 		margin: 0;
 		padding: 0;
 		.container-fluid {
@@ -302,6 +307,156 @@ html {
 					}
 				}
 			}
+			&.inpage-banner {
+				padding: 0;
+				>.row {
+					position: relative;
+					&:after {
+						background: url(http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/20857/misc-left.png) no-repeat;
+						height: 296px;
+						position: absolute;
+						left: 0;
+						top: 0;
+						width: 49%;
+					}
+					&:before {
+						background: url(http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/20862/misc-right.png) right 0 no-repeat;
+						height: 296px;
+						position: absolute;
+						right: 0;
+						top: 0;
+						width: 49%;
+					}
+					.container {
+						.row {
+							height: 296px;
+							position: relative;
+							text-align: center;
+							top: 34px;
+							z-index: 1000;
+							img {
+								@include box-shadow(0 0 6px 2px rgba(0,0,0,.3));
+							}
+						}
+					}
+				}
+			}
+			&.main-content {
+				background: url(http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17268/main-bg.png) 0 0 repeat-x;
+				.row {
+					.container {
+						margin: 0 auto;
+						padding: 80px 15px;
+						width: 940px;
+						.row {
+							.col-md-8 {
+								padding: 0;
+								width: 657px;
+								h1.page-heading {
+									border-bottom: 1px solid #ffb427;
+									color: #6a747c;
+									font-family: 'proxima_nova_rgregular', sans-serif;
+									font-size: 30px;
+									font-weight: normal;
+									line-height: 36px;
+									margin-top: 0;
+									padding-bottom: 20px;
+									text-transform: uppercase;
+								}
+								.text-area {
+									padding: 20px 60px 0 0;
+									h2 {
+										color: #005288;
+										font-family: 'proxima_nova_rgregular', sans-serif;
+										font-size: 18px;
+										font-weight: normal;
+										line-height: 24px;
+										margin-top: 0;
+										padding-bottom: 15px;
+										text-transform: uppercase;
+									}
+									p {
+										a {
+											color: #005288;
+											@include transition(.3s color ease-in-out);
+											&:hover {
+												color: #51504f;
+												text-decoration: none;
+											}
+										}
+									}
+								}
+							}
+							.col-md-4 {
+								padding: 0;
+								width: 283px;
+								.side-menu-bg {
+									background: url(http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/59609/cugradient.jpg) center top no-repeat #7c7c7c;
+									margin-bottom: 20px;
+									ul.side-menu {
+										font-family: 'proxima_nova_rgregular', sans-serif;
+										font-size: 11px;
+										font-weight: normal;
+										line-height: 18px;
+										margin: 0;
+										padding: 0 15px;
+										text-transform: uppercase;
+										li {
+											border-top: 1px solid #ffb427;
+											list-style: none;
+											margin: 0;
+											padding: 0;
+											&:first-child {
+												border-top: none;
+											}
+											a {
+												color: #000;
+												display: block;
+												padding: 10px 0;
+												@include transition(.3s color ease-in-out);
+												&:hover {
+													color: #fff;
+													text-decoration: none;
+												}
+											}
+										}
+									}
+								}
+								.information {
+									background: url(http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17253/information.png) 0 0 no-repeat;
+									box-sizing: initial;
+									color: #c9c9c9;
+									font-family: 'proximanova-semibold', sans-serif;
+									font-size: 13px;
+									height: 153px;
+									line-height: 24px;
+									margin-bottom: 20px;
+									padding: 20px 0;
+									width: 100%;
+									h6 {
+										border-bottom: 1px solid #bbb7b4;
+										color: #fff;
+										font-family: 'proximanova-semibold', sans-serif;
+										font-size: 14px;
+										letter-spacing: 2px;
+										line-height: 24px;
+										margin: 0 15px;
+										text-align: center;
+										span {
+											font-size: 23px;
+											letter-spacing: 4px;
+										}
+									}
+									p.call {
+										margin: 0;
+										padding: 5px 0 0 15px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
 			&.home-body {
 				background: url(http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17268/main-bg.png) 0 0 repeat-x;
 				padding: 0;
@@ -515,7 +670,7 @@ html {
 						border-radius: 0;
 						margin-bottom: 0;
 						position: relative;
-						z-index: 2;
+						z-index: 1000000;
 						.navbar-header {
 							margin: 0;
 							position: relative;
@@ -602,6 +757,27 @@ html {
 						}
 					}
 				}
+				&.inpage-banner {
+					>.row {
+						&:before {
+							height: 150px;
+						}
+						&:after {
+							height: 150px;
+						}
+						.container {
+							.row {
+								height: 150px;
+								top: -52px;
+								img {
+									@include box-shadow(none);
+									height: 202px;
+									width: auto;
+								}
+							}
+						}
+					}
+				}
 				&.mobile-call {
 					.col-xs-6 {
 						&.call {
@@ -628,6 +804,32 @@ html {
 							line-height: 31px;
 							text-transform: uppercase;
 							margin: 0;
+						}
+					}
+				}
+				&.main-content {
+					.row {
+						.container {
+							padding: 30px 0;
+							width: 100%;
+							.row {
+								.col-md-8 {
+									width: 100%;
+								}
+								.col-md-4 {
+									width: 100%;
+									.side-menu-bg {
+										background-size: 100% 100%;
+										ul.side-menu {
+											li {
+												font-size: 16px;
+												line-height: normal;
+												text-align: center;
+											}
+										}
+									}
+								}
+							}
 						}
 					}
 				}
@@ -792,6 +994,28 @@ html {
 								h3 {
 									font-size: .8em;
 									line-height: 1.2em;
+								}
+							}
+						}
+					}
+				}
+				&.inpage-banner {
+					>.row {
+						&:before {
+							background: none;
+							height: auto;
+						}
+						&:after {
+							background: none;
+							height: auto;
+						}
+						.container {
+							.row {
+								height: auto;
+								top: 0;
+								img {
+									height: auto;
+									width: 100%;
 								}
 							}
 						}
