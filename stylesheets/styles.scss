@@ -167,9 +167,9 @@ html {
 							margin: 0;
 							padding: 0;
 							position: absolute;
-							top:37px; 
-							width:713px; 
-							z-index:100;
+							top: 37px;
+							width: 713px;
+							z-index: 10000000;
 							li {
 								float: left;
 								position: relative;
@@ -547,6 +547,15 @@ html {
 										font-family: 'proximanova-semibold';
 										text-align: right;
 										text-transform: uppercase;
+										ul.dropdown-menu {
+											margin: 0;
+											padding: 0;
+											li {
+												&:last-child {
+													border-bottom: none;
+												}
+											}
+										}
 									}
 								}
 							}

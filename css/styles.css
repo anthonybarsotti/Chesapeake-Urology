@@ -118,7 +118,7 @@ html body {
           position: absolute;
           top: 37px;
           width: 713px;
-          z-index: 100; }
+          z-index: 10000000; }
           html body .container-fluid.header .container.nav .row #desktop-nav li {
             float: left;
             position: relative;
@@ -422,6 +422,11 @@ html body {
               font-family: 'proximanova-semibold';
               text-align: right;
               text-transform: uppercase; }
+              html body .container-fluid.header .navbar .navbar-header .collapse ul.navbar-nav li ul.dropdown-menu, html body .container-fluid.header .navbar .navbar-header .collapsing ul.navbar-nav li ul.dropdown-menu {
+                margin: 0;
+                padding: 0; }
+                html body .container-fluid.header .navbar .navbar-header .collapse ul.navbar-nav li ul.dropdown-menu li:last-child, html body .container-fluid.header .navbar .navbar-header .collapsing ul.navbar-nav li ul.dropdown-menu li:last-child {
+                  border-bottom: none; }
     html body .container-fluid.header .cycle-slideshow .slide .caption {
       top: 100px;
       width: 300px; }
