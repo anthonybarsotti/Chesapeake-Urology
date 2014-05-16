@@ -30,7 +30,8 @@ html body {
   padding: 0; }
   html body .container-fluid.header {
     background: url(http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17248/header-bg.jpg) 0 bottom repeat-x #a2a19c;
-    border-bottom: 1px solid #fff; }
+    border-bottom: 1px solid #fff;
+    padding: 0; }
     html body .container-fluid.header .container.nav {
       background: url(http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17333/header-top-bgwhite.png) 0 0 no-repeat;
       left: 50%;
@@ -38,7 +39,7 @@ html body {
       margin-left: -522px;
       padding: 0;
       position: absolute;
-      z-index: 2; }
+      z-index: 10; }
       html body .container-fluid.header .container.nav .row {
         margin: 0; }
         html body .container-fluid.header .container.nav .row .logo {
@@ -52,7 +53,10 @@ html body {
             width: 309px; }
         html body .container-fluid.header .container.nav .row #header-link {
           color: #000204;
-          font: normal 12px/20px 'proximanova-semibold';
+          font-family: 'proximanova-semibold', sans-serif;
+          font-size: 12px;
+          font-weight: normal;
+          line-height: 20px;
           height: 30px;
           padding-top: 4px;
           position: absolute;
@@ -62,15 +66,24 @@ html body {
           z-index: 77; }
           html body .container-fluid.header .container.nav .row #header-link .call {
             color: #9e9e9e;
-            font: normal 19px/24px 'proxima_nova_rgregular';
+            font-family: 'proxima_nova_rgregular', sans-serif;
+            font-size: 19px;
+            font-weight: normal;
+            line-height: 24px;
             float: left;
             text-transform: uppercase; }
             html body .container-fluid.header .container.nav .row #header-link .call span {
               color: #51504f;
-              font: normal 18px/24px 'proximanova-semibold'; }
+              font-family: 'proximanova-semibold', sans-serif;
+              font-size: 18px;
+              font-weight: normal;
+              line-height: 24px; }
               html body .container-fluid.header .container.nav .row #header-link .call span a {
                 color: #51504f;
-                font: normal 18px/24px 'proximanova-semibold';
+                font-family: 'proximanova-semibold', sans-serif;
+                font-size: 18px;
+                font-weight: normal;
+                line-height: 24px;
                 text-decoration: none; }
           html body .container-fluid.header .container.nav .row #header-link .search {
             background: url(http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/59614/searchyellow.jpg) center 0 no-repeat;
@@ -94,8 +107,11 @@ html body {
               padding: 0 5px;
               width: 148px; }
         html body .container-fluid.header .container.nav .row #desktop-nav {
-          font: normal 12px/18px 'proximanova-semibold';
+          font-family: 'proximanova-semibold', sans-serif;
+          font-size: 12px;
+          font-weight: normal;
           left: 319px;
+          line-height: 18px;
           list-style: none;
           margin: 0;
           padding: 0;
@@ -138,7 +154,10 @@ html body {
                   background: none;
                   color: #6a747c;
                   display: block;
-                  font: normal 11px/14px 'swiss_721bold';
+                  font-family: 'swiss_721bold', sans-serif;
+                  font-size: 11px;
+                  font-weight: normal;
+                  line-height: 14px;
                   padding: 12px 10px;
                   text-decoration: none;
                   text-transform: uppercase;
@@ -153,7 +172,7 @@ html body {
     html body .container-fluid.header .cycle-slideshow {
       margin: 0 auto;
       max-height: 521px;
-      max-width: 1395px;
+      max-width: 1358px;
       overflow: hidden;
       position: relative;
       z-index: 1; }
@@ -173,7 +192,8 @@ html body {
         background: url(http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17293/slider_pre.png) 0 0 no-repeat;
         left: 80px; }
       html body .container-fluid.header .cycle-slideshow .slide {
-        position: relative; }
+        position: relative;
+        width: 100%; }
         html body .container-fluid.header .cycle-slideshow .slide .caption {
           left: 160px;
           position: absolute;
@@ -182,7 +202,10 @@ html body {
           width: 504px; }
           html body .container-fluid.header .cycle-slideshow .slide .caption h1 {
             color: #005288;
-            font: normal 30px/34px 'swiss_721bold';
+            font-family: 'swiss_721bold', sans-serif;
+            font-size: 30px;
+            font-weight: normal;
+            line-height: 34px;
             letter-spacing: 3px;
             margin: 0;
             padding-bottom: 10px;
@@ -190,8 +213,11 @@ html body {
             text-shadow: 1px 1px 1px #bfc4c5; }
           html body .container-fluid.header .cycle-slideshow .slide .caption h3 {
             color: #677f95;
-            font: normal 15px/24px 'proximanova-semibold';
+            font-family: 'proximanova-semibold', sans-serif;
+            font-size: 15px;
+            font-weight: normal;
             letter-spacing: 2px;
+            line-height: 24px;
             margin: 0;
             padding-bottom: 10px;
             text-transform: uppercase;
@@ -200,6 +226,7 @@ html body {
           width: 100%; }
   html body .container-fluid.home-body {
     background: url(http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17268/main-bg.png) 0 0 repeat-x;
+    padding: 0;
     position: relative; }
     html body .container-fluid.home-body #for-tabs {
       background: #51504f;
@@ -228,9 +255,12 @@ html body {
               width: 100px; }
             html body .container-fluid.home-body #for-tabs .row .col-sm-4 a h5 {
               background: url(http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17318/tab-bg.jpg) no-repeat;
-              font: normal 24px/24px 'proximanova-semibold';
+              font-family: 'proximanova-semibold', sans-serif;
+              font-size: 24px;
+              font-weight: normal;
               float: left;
               height: 151px;
+              line-height: 1em;
               margin: 0;
               padding: 25px 0;
               text-align: center;
@@ -239,11 +269,122 @@ html body {
               transition: background 0.3s ease-in-out;
               width: 241px; }
               html body .container-fluid.home-body #for-tabs .row .col-sm-4 a h5 span {
-                font: normal 14px/24px 'proximanova-semibold'; }
+                font-family: 'proximanova-semibold', sans-serif;
+                font-size: 14px;
+                font-weight: normal;
+                line-height: 1.71429em; }
           html body .container-fluid.home-body #for-tabs .row .col-sm-4:hover h5 {
             background: url(http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/59987/tab-hover-gold.jpg); }
+    html body .container-fluid.home-body #home-about {
+      display: table;
+      height: 100%;
+      padding: 134px 0 54px 0; }
+      html body .container-fluid.home-body #home-about .row {
+        display: table-row; }
+        html body .container-fluid.home-body #home-about .row .col-md-4 {
+          border-left: 1px solid #c6c4c1;
+          display: table-cell;
+          float: none;
+          height: 100%;
+          padding: 0 20px; }
+          html body .container-fluid.home-body #home-about .row .col-md-4 h3 {
+            color: #005288;
+            font-family: 'proximanova-semibold', sans-serif;
+            font-size: 22px;
+            line-height: 24px;
+            margin-top: 0;
+            text-transform: uppercase; }
+          html body .container-fluid.home-body #home-about .row .col-md-4 p {
+            color: #51504f;
+            font-family: 'proxima_nova_rgregular', sans-serif;
+            line-height: 18px; }
+          html body .container-fluid.home-body #home-about .row .col-md-4:first-child {
+            border-left: 0; }
+    html body .container-fluid.home-body #our-affiliations {
+      background: url(http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17308/sponsors-bg.png) repeat-x;
+      height: 135px; }
+      html body .container-fluid.home-body #our-affiliations .row {
+        margin: 0; }
+        html body .container-fluid.home-body #our-affiliations .row h3 {
+          color: #938B82;
+          font-family: 'proximanova-semibold', sans-serif;
+          font-size: 24px;
+          line-height: 24px;
+          padding-left: 20px;
+          text-transform: uppercase; }
+        html body .container-fluid.home-body #our-affiliations .row img {
+          display: block;
+          margin: 15px 0 0 40px; }
+  html body .container-fluid.footer {
+    background: url(../img/footer-bg.png);
+    padding: 100px 0 20px 0; }
+    html body .container-fluid.footer .row {
+      margin: 0; }
+      html body .container-fluid.footer .row #footer-social {
+        border-bottom: 1px solid #d2cec6;
+        border-top: 1px solid #d2cec6;
+        padding: 25px 0; }
+        html body .container-fluid.footer .row #footer-social h2 {
+          color: #5F574F;
+          font-family: 'proximanova-semibold', sans-serif;
+          font-size: 14px;
+          font-weight: normal;
+          float: left;
+          margin: 0;
+          padding: 5px 70px 0 0;
+          text-transform: uppercase; }
+        html body .container-fluid.footer .row #footer-social .facebook {
+          background: url(http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17298/social-icons.png) 0 0 no-repeat;
+          display: inline-block;
+          height: 31px;
+          margin: 0 3px 0 0;
+          width: 31px; }
+          html body .container-fluid.footer .row #footer-social .facebook:hover {
+            background-position: 0 -34px; }
+        html body .container-fluid.footer .row #footer-social .twitter {
+          background: url(http://umbraco-chesapeakeurology-com.vs1-cua-md.tivilonhost.com/media/17298/social-icons.png) -64px 0 no-repeat;
+          display: inline-block;
+          height: 31px;
+          width: 31px; }
+          html body .container-fluid.footer .row #footer-social .twitter:hover {
+            background-position: -64px -34px; }
+      html body .container-fluid.footer .row #footer-nav {
+        padding: 32px 0 50px 0; }
+        html body .container-fluid.footer .row #footer-nav .col-md-5 {
+          padding: 0; }
+          html body .container-fluid.footer .row #footer-nav .col-md-5 h6 {
+            color: #9c9c9c;
+            font-size: 12px;
+            font-family: 'proximanova-semibold', sans-serif;
+            line-height: 1.5em;
+            margin: 0 auto;
+            text-transform: uppercase; }
+        html body .container-fluid.footer .row #footer-nav .col-md-7 ul {
+          margin: 0;
+          padding: 0; }
+          html body .container-fluid.footer .row #footer-nav .col-md-7 ul li {
+            float: left;
+            line-height: 1em;
+            list-style: none;
+            margin: 0;
+            padding: 0; }
+            html body .container-fluid.footer .row #footer-nav .col-md-7 ul li a {
+              color: #9c9c9c;
+              font-size: 12px;
+              font-family: 'proximanova-semibold', sans-serif;
+              margin: 0 25px;
+              text-transform: uppercase;
+              -webkit-transition: color 0.3s ease-in-out;
+              transition: color 0.3s ease-in-out; }
+              html body .container-fluid.footer .row #footer-nav .col-md-7 ul li a:hover {
+                color: #000;
+                text-decoration: none; }
 
 @media (max-width: 992px) {
+  html body .container {
+    padding: 0; }
+    html body .container .row {
+      margin: 0; }
   html body .container-fluid.header {
     padding: 0; }
     html body .container-fluid.header .navbar {
@@ -257,6 +398,7 @@ html body {
         position: relative;
         width: 100%; }
         html body .container-fluid.header .navbar .navbar-header .navbar-toggle {
+          border-radius: 0;
           display: block; }
         html body .container-fluid.header .navbar .navbar-header .navbar-brand {
           background: #fff;
@@ -303,6 +445,24 @@ html body {
       left: 8%; }
     html body .container-fluid.header .cycle-slideshow .cycle-next.glyphicon {
       right: 8%; }
+  html body .container-fluid.mobile-call .col-xs-6.call h5 {
+    background: url(../img/Phone.png) no-repeat left center;
+    background-size: 20px 18px;
+    float: right;
+    padding-left: 24px; }
+  html body .container-fluid.mobile-call .col-xs-6.location h5 {
+    background: url(../img/MapIcon.png) no-repeat left center;
+    background-size: 13px 18px;
+    padding-left: 17px; }
+  html body .container-fluid.mobile-call .col-xs-6 h5 {
+    color: #9e9e9e;
+    display: inline-block;
+    font-family: 'proximanova-semibold', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 31px;
+    text-transform: uppercase;
+    margin: 0; }
   html body .container-fluid.home-body {
     padding: 0; }
     html body .container-fluid.home-body #for-tabs {
@@ -310,10 +470,82 @@ html body {
       position: static;
       width: 100%; }
       html body .container-fluid.home-body #for-tabs .row .col-sm-4 a h5 {
-        background-size: cover;
-        width: 100%; }
-        html body .container-fluid.home-body #for-tabs .row .col-sm-4 a h5:hover {
-          background-size: cover; } }
+        background: url(../img/tab-bg-dark-mobile.png);
+        background-size: 100% 100%;
+        width: calc(100% - 100px); }
+      html body .container-fluid.home-body #for-tabs .row .col-sm-4:hover a h5 {
+        background: url(../img/tab-bg-gold-mobile.png);
+        background-size: 100% 100%; }
+    html body .container-fluid.home-body #patient-navigator-mobile {
+      padding: 37px 27px; }
+      html body .container-fluid.home-body #patient-navigator-mobile .row h1 {
+        color: #005288;
+        font-family: 'proximanova-semibold';
+        font-size: 18px;
+        margin-bottom: 0;
+        text-transform: uppercase; }
+        html body .container-fluid.home-body #patient-navigator-mobile .row h1 span {
+          font-size: 1.33333em; }
+      html body .container-fluid.home-body #patient-navigator-mobile .row p {
+        color: #6a747c;
+        font-family: 'proxima_nova_rgregular', sans-serif;
+        margin-top: 1.78571em;
+        margin-bottom: 0; }
+    html body .container-fluid.home-body #skipnav-mobile {
+      background: #f2f2f1;
+      border-bottom: 1px solid #b1bbc4;
+      border-top: 1px solid #b1bbc4;
+      padding: 0;
+      text-align: center; }
+      html body .container-fluid.home-body #skipnav-mobile ul {
+        margin: 0;
+        padding: 0; }
+        html body .container-fluid.home-body #skipnav-mobile ul li {
+          list-style: none;
+          margin: 0;
+          padding: 0; }
+          html body .container-fluid.home-body #skipnav-mobile ul li:last-child a {
+            background: rgba(0, 0, 0, 0); }
+            html body .container-fluid.home-body #skipnav-mobile ul li:last-child a:hover {
+              background: rgba(0, 0, 0, 0.1); }
+          html body .container-fluid.home-body #skipnav-mobile ul li a {
+            background: url(../img/mobile-skipnav-border.png) rgba(0, 0, 0, 0) no-repeat bottom center;
+            color: #6a747c;
+            display: block;
+            font-family: 'proximanova-semibold', sans-serif;
+            font-size: 18px;
+            padding: 20px 0 17px 0;
+            text-decoration: none;
+            text-transform: uppercase;
+            -webkit-transition: 0.3s background ease-in-out;
+            transition: 0.3s background ease-in-out; }
+            html body .container-fluid.home-body #skipnav-mobile ul li a:hover {
+              background: url(../img/mobile-skipnav-border.png) rgba(0, 0, 0, 0.1) no-repeat bottom center; }
+  html body .container-fluid.footer {
+    padding: 30px 0 25px 0; }
+    html body .container-fluid.footer .row #footer-social {
+      border: none;
+      padding: 0;
+      text-align: center; }
+      html body .container-fluid.footer .row #footer-social h2 {
+        float: none;
+        font-size: 10px;
+        margin-bottom: 1em;
+        padding: 0; }
+      html body .container-fluid.footer .row #footer-social .icons {
+        display: inline-block;
+        margin-bottom: 20px; }
+    html body .container-fluid.footer .row #footer-nav {
+      padding: 0; }
+      html body .container-fluid.footer .row #footer-nav .row .col-md-5 h6 {
+        color: #6a747c;
+        font-family: 'proximanova-semibold', sans-serif;
+        font-size: 10px;
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase; }
+  html body .container-fluid .row {
+    margin: 0; } }
 
 @media (max-width: 768px) {
   html body .container-fluid.header .navbar .container-fluid {
@@ -332,10 +564,15 @@ html body {
     html body .container-fluid.header .cycle-slideshow .slide .caption h3 {
       font-size: 0.8em;
       line-height: 1.2em; }
-  html body .container-fluid.home-body #for-tabs .row .col-sm-4 a {
+  html body .container-fluid.home-body #for-tabs {
     height: auto; }
-    html body .container-fluid.home-body #for-tabs .row .col-sm-4 a h5 {
-      height: auto; } }
+    html body .container-fluid.home-body #for-tabs .row .col-sm-4 {
+      border-bottom: 2px solid #fff; }
+      html body .container-fluid.home-body #for-tabs .row .col-sm-4 a h5 {
+        font-size: 30px;
+        padding: 33px 0; }
+        html body .container-fluid.home-body #for-tabs .row .col-sm-4 a h5 span {
+          font-size: 17px; } }
 
 @media (max-width: 480px) {
   html body .container-fluid.header .navbar .container-fluid {
