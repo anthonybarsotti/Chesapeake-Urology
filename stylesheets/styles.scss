@@ -802,7 +802,6 @@ html {
 							}
 						}
 						h5 {
-							color: #9e9e9e;
 							display: inline-block;
 							font-family: 'proximanova-semibold', sans-serif;
 							font-size: 18px;
@@ -810,6 +809,12 @@ html {
 							line-height: 31px;
 							text-transform: uppercase;
 							margin: 0;
+							a {
+								color: #9e9e9e;
+								&:hover {
+									text-decoration: none;
+								}
+							}
 						}
 					}
 				}
@@ -1058,12 +1063,12 @@ html {
 					.col-xs-6 {
 						&.call {
 							h5 {
-								font-size: 1em;
+								font-size: .9em;
 							}
 						}
 						&.location {
 							h5 {
-								font-size: 1em;
+								font-size: .9em;
 							}
 						}
 					}

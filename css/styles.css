@@ -602,7 +602,6 @@ html body {
     background-size: 13px 18px;
     padding-left: 17px; }
   html body .container-fluid.mobile-call .col-xs-6 h5 {
-    color: #9e9e9e;
     display: inline-block;
     font-family: 'proximanova-semibold', sans-serif;
     font-size: 18px;
@@ -610,6 +609,10 @@ html body {
     line-height: 31px;
     text-transform: uppercase;
     margin: 0; }
+    html body .container-fluid.mobile-call .col-xs-6 h5 a {
+      color: #9e9e9e; }
+      html body .container-fluid.mobile-call .col-xs-6 h5 a:hover {
+        text-decoration: none; }
   html body .container-fluid.main-content .row .container {
     padding: 30px 0;
     width: 100%; }
@@ -753,9 +756,9 @@ html body {
         html body .container-fluid.home-body #for-tabs .row .col-sm-4 a h5 span {
           font-size: 17px; }
   html body .container-fluid.mobile-call .col-xs-6.call h5 {
-    font-size: 1em; }
+    font-size: 0.9em; }
   html body .container-fluid.mobile-call .col-xs-6.location h5 {
-    font-size: 1em; } }
+    font-size: 0.9em; } }
 
 @media (max-width: 480px) {
   html body .container-fluid.header .navbar .container-fluid {
